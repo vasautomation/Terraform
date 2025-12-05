@@ -1,5 +1,4 @@
 #Push your Terraform configuration for AWS EC2 instance below"
-#Testing git revert
 
 terraform {
   required_providers {
