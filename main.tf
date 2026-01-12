@@ -1,5 +1,4 @@
 #Push your Terraform configuration for AWS EC2 instance below"
-#Testing git revert
 
 terraform {
   required_providers {
@@ -13,7 +12,7 @@ terraform {
 provider "aws" {
   region = "us-east-1"
 }
-
+#East-1
 # ------------------------------
 # Security Group
 # ------------------------------
@@ -43,7 +42,7 @@ resource "aws_security_group" "ec2_sg" {
 # ------------------------------
 resource "aws_instance" "my_ec2" {
   ami           = "ami-0c02fb55956c7d316" # Amazon Linux 2 example
-  instance_type = "t2.micro"
+  instance_type = "t3.micro"
   key_name      = "my-key"                # Replace with your key pair
 
   vpc_security_group_ids = [
